@@ -1,0 +1,2 @@
+# NursultanKalniyazov
+The first repository
