@@ -1,0 +1,31 @@
+#!/bin/bash
+echo "Hello! The result of the script is written below." >> yo.txt
+echo "-------------------------------------------------" >> yo.txt
+count=1
+cat myfile | while read line 
+do
+if ping -c 3 $line 
+then
+echo "Current date is: "; date
+echo "Ping to $line is succeded"
+echo "-------------------------"
+elif [ -n "$line" ]
+then 
+echo "Current date is: "; date 
+echo "Ping to $line is failed"
+echo "-------------------------"
+fi
+count=$(($count+1))
+done >> yo.txt
+echo "Finished."
+
+
+
+#cat yo.txt | mail -s "File for Papa" kkalniyazovrs@gmail.com
+#cat yo.txt | mail -s "File for Sultan" sultanidze24@gmail.com
+
+#yo.txt | mail -s "File for Papa" kkalniyazovrs@gmail.com
+(uuencode yo.txt yo.txt; echo "Пинг для различных сайтов") | mailx -s 'Пинги' kkalniyazovrs@gmail.com
+(uuencode yo.txt yo.txt; echo "Пинг для различных сайтов") | mailx -s 'Пинги' sultanidze24@gmail.com
+
+
