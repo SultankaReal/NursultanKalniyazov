@@ -1,1 +1,1 @@
-print()
+print("some changes")
