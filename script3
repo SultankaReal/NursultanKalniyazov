@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #File is located in /
 echo "Deleting the html page"
 sleep 2
