@@ -1,0 +1,37 @@
+root@ubuntu:/# docker build -t ios2 /project/
+Sending build context to Docker daemon  13.31kB
+Step 1/16 : FROM ubuntu
+ ---> f63181f19b2f
+Step 2/16 : MAINTAINER Kalniyazov Nursultan <sultanidze24@gmail.com>
+ ---> Using cache
+ ---> 1a990290a244
+Step 3/16 : RUN apt-get update && apt-get -y install curl
+ ---> Using cache
+ ---> e829aaa5a0ff
+Step 4/16 : RUN apt install -y nginx
+ ---> Using cache
+ ---> d0be2c58b51f
+Step 5/16 : RUN apt install -y systemctl
+ ---> Using cache
+ ---> 651985be4c19
+Step 6/16 : RUN systemctl enable nginx
+ ---> Using cache
+ ---> 736093d16b2e
+Step 7/16 : RUN sleep 5
+ ---> Using cache
+ ---> fdbba3fa694d
+Step 8/16 : RUN mkdir -p /project/
+ ---> Using cache
+ ---> 73c80cd6f71f
+Step 9/16 : WORKDIR /project/
+ ---> Using cache
+ ---> 123119ee1214
+Step 10/16 : RUN systemctl start nginx
+ ---> Using cache
+ ---> bd37bd9b3125
+Step 11/16 : RUN systemctl status nginx
+ ---> Running in 02ca6d4ccc4e
+nginx.service - A high performance web server and a reverse proxy server
+    Loaded: loaded (/usr/lib/systemd/system/nginx.service, enabled)
+    Active: inactive (dead)
+The command '/bin/sh -c systemctl status nginx' returned a non-zero code: 3
