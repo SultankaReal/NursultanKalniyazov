@@ -9,7 +9,7 @@ RUN apt install -y systemctl
 #RUN sleep 2
 RUN systemctl enable nginx
 #RUN sleep 2
-RUN rm /etc/nginx/sites-enabled/default && service nginx restart
+#RUN rm /etc/nginx/sites-enabled/default && service nginx restart
 RUN sleep 5
 RUN mkdir -p /project/
 #RUN sleep 2
