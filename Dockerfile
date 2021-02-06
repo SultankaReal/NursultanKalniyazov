@@ -6,3 +6,4 @@ EXPOSE 80
 EXPOSE 8080
 STOPSIGNAL SIGQUIT
 CMD ["nginx" "-g" "daemon off;"]
+
