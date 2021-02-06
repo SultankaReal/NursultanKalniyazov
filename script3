@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #File is located in /
 echo "Deleting the html page"
 rm -rf www.chiark.greenend.org.uk/ 
