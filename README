@@ -1,6 +1,9 @@
 #This is the instruction for automatization
 
 #To update the mirror use ./script3 
-#For scheduling updates "root" file is used
-#Makefile is used for updating the html page, building the image, starting the container and killing the container
+
+#For scheduling updates "root" file is used (every Saturday at 3:45 A.M.)
+
+#Makefile is used for updating the html page (make sync), building the image, starting the container (make deploy) and killing the container (make stop)
+
 #Dockerfile is used for building the image. After that the container will be created.
