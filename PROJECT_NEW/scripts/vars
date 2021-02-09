@@ -1,0 +1,5 @@
+#!/bin/sh
+HOST=19.198.59.4
+CNAME=somecontainer
+IMGNAME=nginx:someimage
+KEY=~/.ssh/awskey.pem #the ssh-key
