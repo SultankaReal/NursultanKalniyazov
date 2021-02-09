@@ -8,3 +8,4 @@ Dockerfile is used for building the image (we copied the files 'mirror.conf' and
 
 Makefile is used to do some jobs (syncronization - make sync, deployment - make deploy) 
 
+Variables in the 'vars' file in the /scripts directory
