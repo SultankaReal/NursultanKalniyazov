@@ -1,11 +1,7 @@
 The directory conf/ is used for initial installation of nginx (mirror.conf file)
 
-The directory /scripts is used for local syncronization (make sync) and remote deployment (make deploy)
-
 'root' file is the crontab-file for process scheduling
 
-Dockerfile is used for building the image (we copied the files 'mirror.conf' and 'script.sh' into nginx directory)
+Dockerfile is used for building the image (we copied the files 'mirror.conf' and the result of the 'wget' command into nginx directory)
 
-Makefile is used to do some jobs (syncronization - make sync, deployment - make deploy) 
-
-Variables in the 'vars' file in the /scripts directory
+Makefile is used to do some jobs (make sync, make build, make run, make stop)
