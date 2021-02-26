@@ -1,7 +1,0 @@
-The directory conf/ is used for initial installation of nginx (mirror.conf file)
-
-'root' file is the crontab-file for process scheduling
-
-Dockerfile is used for building the image (we copied the files 'mirror.conf' and the result of the 'wget' command into nginx directory)
-
-Makefile is used to do some jobs (make sync, make build, make run, make stop)

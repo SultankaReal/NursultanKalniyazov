@@ -1,2 +1,0 @@
-#This is the crontab file
-45 3 * * sat ./script3
